@@ -1,0 +1,8 @@
+{
+  "name": "eslint-config-andrmoel",
+  "version": "1.0.0",
+  "description": "eslint configuration for projects",
+  "main": "index.js",
+  "author": "andrmoel@gmail.come",
+  "license": "MIT"
+}
