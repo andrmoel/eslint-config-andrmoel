@@ -23,6 +23,7 @@ module.exports = {
             },
         ],
         'padded-blocks': ['error', 'never'],
+        'arrow-body-style': ['error', 'as-needed'],
         'prefer-arrow-callback': ['error'],
         'no-multiple-empty-lines': [
             'error', {
