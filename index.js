@@ -21,6 +21,7 @@ module.exports = {
     ],
     'plugins': [
         'babel',
+        'import',
     ],
     'rules': {
         'indent': [
