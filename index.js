@@ -16,7 +16,8 @@ module.exports = {
     },
     'extends': [
         'google',
-        'plugin:react/recommended',
+        'plugin:import/errors',
+        'plugin:import/warnings',
     ],
     'plugins': [
         'babel',
