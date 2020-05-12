@@ -3,7 +3,7 @@ module.exports = {
         'react': {
             'createClass': 'createReactClass',
             'pragma': 'React',
-            'version': '16',
+            'version': 'detect',
         },
     },
     'parser': 'babel-eslint',
@@ -44,5 +44,15 @@ module.exports = {
                 'prop': 'parens-new-line',
             },
         ],
+        'react/jsx-tag-spacing': [
+            'error', {
+                'closingSlash': 'never',
+                'beforeSelfClosing': 'never',
+                'afterOpening': 'never',
+                'beforeClosing': 'never',
+            },
+        ],
+        'react/jsx-fragments': ['error', 'element'],
+        'react/prop-types': ['off'],
     },
 };
