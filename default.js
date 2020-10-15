@@ -9,6 +9,7 @@ module.exports = {
     ],
     'plugins': [
         'babel',
+        'import',
     ],
     'rules': {
         'indent': [
@@ -22,7 +23,7 @@ module.exports = {
                 'int32Hint': false,
             },
         ],
-        "curly": ['error', 'all'],
+        'curly': ['error', 'all'],
         'padded-blocks': ['error', 'never'],
         'arrow-body-style': ['error', 'as-needed'],
         'prefer-arrow-callback': ['error'],
