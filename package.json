@@ -1,10 +1,18 @@
 {
-  "name": "eslint-config-andrmoel",
+  "name": "@andrmoel/eslint-config-andrmoel",
   "version": "1.0.0",
   "description": "eslint configuration for projects",
+  "repository": "git@github.com:andrmoel/eslint-config-andrmoel.git",
   "main": "index.js",
   "author": "andrmoel@gmail.come",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "push": "git push --follow-tags",
+    "publish": "npm publish"
+  },
   "dependencies": {
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-babel": "^5.3.0",
