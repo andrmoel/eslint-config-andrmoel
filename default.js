@@ -72,6 +72,6 @@ module.exports = {
         'no-extra-semi': 'error',
         'no-invalid-this': 0,
         'babel/no-invalid-this': 1,
-        'import/order': ['error', {'newlines-between': 'always'}],
+        'import/order': ['error'],
     },
 };
