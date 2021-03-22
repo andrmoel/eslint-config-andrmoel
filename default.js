@@ -6,24 +6,34 @@ module.exports = {
     },
     'extends': [
         'google',
+        'plugin:cypress/recommended',
     ],
     'plugins': [
         'babel',
         'import',
+        'jest',
     ],
+    'env': {
+        'jest/globals': true,
+        'node': true,
+        'es6': true,
+    },
+    'globals': {
+        'fail': 'readonly',
+    },
     'rules': {
         'indent': [
             'error', 4, {
                 'SwitchCase': 1,
             },
         ],
+        'no-undef': 'error',
         'max-len': ['error', 120, 4],
         'space-infix-ops': [
             'error', {
                 'int32Hint': false,
             },
         ],
-        'curly': ['error', 'all'],
         'padded-blocks': ['error', 'never'],
         'arrow-body-style': ['error', 'as-needed'],
         'prefer-arrow-callback': ['error'],
@@ -62,6 +72,6 @@ module.exports = {
         'no-extra-semi': 'error',
         'no-invalid-this': 0,
         'babel/no-invalid-this': 1,
-        'import/order': ['error'],
+        'import/order': ['error', {'newlines-between': 'always'}],
     },
 };
