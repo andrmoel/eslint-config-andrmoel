@@ -53,6 +53,7 @@ module.exports = {
             },
         ],
         'react/jsx-fragments': ['error', 'element'],
-        'react/prop-types': ['off'],
+        'react/jsx-curly-brace-presence': ['error', {'props': 'never', 'children': 'never'}],
+        'react/jsx-boolean-value': ['error', 'never'],
     },
 };
